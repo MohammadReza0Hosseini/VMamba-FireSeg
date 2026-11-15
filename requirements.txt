@@ -1,0 +1,15 @@
+# Core environment used for the reported experiment:
+# Python 3.13.11
+# PyTorch 2.11.0+cu130 (CUDA 13.0 build)
+# Install the matching CUDA-enabled PyTorch wheel for your platform before
+# installing the remaining packages.
+
+torch==2.11.0
+mamba-ssm==2.3.2.post1
+causal-conv1d==1.7.0
+
+# Data loading, augmentation and evaluation
+numpy
+albumentations
+opencv-python-headless
+scikit-learn
