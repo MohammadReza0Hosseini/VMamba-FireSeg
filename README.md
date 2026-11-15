@@ -31,6 +31,14 @@ project/
 
 Fire images are paired with masks by filename. Not-fire images are treated as background samples and use empty masks. The dataset itself is not included in this repository.
 
+### Dataset reference
+
+For dataset information and access, refer to the **Fire Segmentation Image Dataset** published by **DiversisAI** on Kaggle:
+
+- [Fire Segmentation Image Dataset — Kaggle](https://www.kaggle.com/datasets/diversisai/fire-segmentation-image-dataset)
+
+The dataset files are not redistributed in this repository. Please refer to the Kaggle dataset page for its original files, description, and applicable license or usage conditions.
+
 ## Validation results
 
 The reported validation run used 7,771 samples and a prediction threshold of 0.5.
