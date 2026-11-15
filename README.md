@@ -51,18 +51,26 @@ The reported validation run used 7,771 samples and a prediction threshold of 0.5
 
 These are results from the current experiment and should be interpreted with the validation split and evaluation procedure used by the project.
 
-## Environment
+## Execution platform and environment
 
-The verified training environment included:
+**The reported training and validation experiment was executed in a cloud-hosted Marimo notebook environment**, not on a local Windows PC or Kaggle.
 
+Verified runtime details:
+
+- Notebook/runtime: Marimo (cloud environment)
+- Working directory: `/marimo`
 - Python 3.13.11
 - PyTorch 2.11.0+cu130
 - CUDA 13.0
-- NVIDIA RTX PRO 6000 Blackwell Server Edition
-- mamba-ssm 2.3.2.post1
-- causal-conv1d 1.7.0
+- GPU: NVIDIA RTX PRO 6000 Blackwell Server Edition (compute capability 12.0)
+- `mamba-ssm` 2.3.2.post1
+- `causal-conv1d` 1.7.0
 
-See the environment reports and backup archive stored separately in Google Drive for additional setup details.
+The source code is a standalone Python script and can also be run outside Marimo, provided the compatible CUDA/PyTorch and package environment is configured.
+
+Install the Python dependencies listed in [requirements.txt](requirements.txt). The PyTorch wheel must match the target CUDA platform; the experiment used the CUDA 13.0 build.
+
+Environment reports and the kernel backup archive are stored separately in Google Drive.
 
 ## Model checkpoint
 
